@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Cuaca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌤️ Data Cuaca Terkini</h1>
+            <p>Memantau data cuaca dengan visual yang lebih menarik.</p>
+        </header>
+
+        <!-- Summary Section -->
+        <section id="summary">
+            <h2>Ringkasan Cuaca</h2>
+            <div class="summary-box">
+                <div class="stat-card">
+                    <p>Total Data</p>
+                    <h3 id="totalData">0</h3>
+                </div>
+                <div class="stat-card">
+                    <p>Suhu Rata-rata</p>
+                    <h3 id="avgTemp">-</h3><span>°C</span>
+                </div>
+                <div class="stat-card">
+                    <p>Kelembaban Rata-rata</p>
+                    <h3 id="avgHumidity">-</h3><span>%</span>
+                </div>
+                <div class="stat-card">
+                    <p>Lux Rata-rata</p>
+                    <h3 id="avgLux">-</h3><span>lux</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Cards Section -->
+        <section id="dataCards">
+            <h2>Data Cuaca</h2>
+            <div id="weatherCards" class="cards-container">
+                <!-- Data cards will be loaded here dynamically -->
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Data Cuaca &copy; 2024 | Powered by Database Lokal</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

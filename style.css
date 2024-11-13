@@ -1,0 +1,133 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.2em;
+}
+
+header p {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Summary Section Styling */
+#summary {
+    margin: 30px 0;
+}
+
+.summary-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background-color: #fff;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+.stat-card p {
+    color: #777;
+}
+
+.stat-card h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Data Cards Section */
+#dataCards {
+    margin-top: 30px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 250px;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h4 {
+    color: #4CAF50;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.card .timestamp {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .summary-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
